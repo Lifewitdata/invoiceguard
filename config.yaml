@@ -1,0 +1,35 @@
+project:
+  name: invoiceguard
+  seed: 42
+
+data:
+  raw_dir: data/raw
+  interim_dir: data/interim
+  processed_dir: data/processed
+  source_url: "https://archive.ics.uci.edu/static/public/502/online+retail+ii.zip"
+  raw_zip: online_retail_II.zip
+  raw_file: online_retail_II.xlsx
+  sheets: ["Year 2009-2010", "Year 2010-2011"]
+  interim_file: invoices.parquet
+
+validation:
+  min_rows: 100000
+  max_missing_frac_warn: 0.30
+
+split:
+  strategy: time
+  test_frac: 0.2
+
+model:
+  test_size: 0.2
+  cv_folds: 3
+  primary_metric: average_precision
+  top_k: 50
+
+cost:
+  false_negative: 10
+  false_positive: 1
+
+api:
+  host: 127.0.0.1
+  port: 8000

@@ -1,0 +1,150 @@
+{
+  "generated_at_utc": "2026-10-07T11:56:39+00:00",
+  "n_reference": 798435,
+  "n_current": 268936,
+  "thresholds": {
+    "watch": 0.1,
+    "drift": 0.25
+  },
+  "n_drifted": 2,
+  "n_watch": 3,
+  "drifted_features": [
+    "month",
+    "prod_prior_lines"
+  ],
+  "watch_features": [
+    "cust_prior_lines",
+    "cust_prior_invoices",
+    "prod_prior_return_rate"
+  ],
+  "per_feature": {
+    "abs_quantity_log": {
+      "psi": 0.0044,
+      "status": "stable"
+    },
+    "unit_price_log": {
+      "psi": 0.0298,
+      "status": "stable"
+    },
+    "abs_amount_log": {
+      "psi": 0.0127,
+      "status": "stable"
+    },
+    "is_zero_price": {
+      "psi": 0.0,
+      "status": "stable"
+    },
+    "is_negative_price": {
+      "psi": 0.0,
+      "status": "stable"
+    },
+    "desc_len": {
+      "psi": 0.0061,
+      "status": "stable"
+    },
+    "has_description": {
+      "psi": 0.0,
+      "status": "stable"
+    },
+    "stock_code_len": {
+      "psi": 0.0337,
+      "status": "stable"
+    },
+    "stock_code_numeric": {
+      "psi": 0.0,
+      "status": "stable"
+    },
+    "hour": {
+      "psi": 0.0106,
+      "status": "stable"
+    },
+    "day_of_week": {
+      "psi": 0.0019,
+      "status": "stable"
+    },
+    "month": {
+      "psi": 5.5136,
+      "status": "drift"
+    },
+    "day_of_month": {
+      "psi": 0.0421,
+      "status": "stable"
+    },
+    "country_freq": {
+      "psi": 0.0,
+      "status": "stable"
+    },
+    "stock_code_freq": {
+      "psi": 0.0155,
+      "status": "stable"
+    },
+    "has_customer": {
+      "psi": 0.0,
+      "status": "stable"
+    },
+    "cust_is_new": {
+      "psi": 0.0,
+      "status": "stable"
+    },
+    "cust_prior_lines": {
+      "psi": 0.154,
+      "status": "watch"
+    },
+    "cust_prior_invoices": {
+      "psi": 0.1358,
+      "status": "watch"
+    },
+    "cust_prior_return_rate": {
+      "psi": 0.034,
+      "status": "stable"
+    },
+    "cust_prior_mean_abs_amount": {
+      "psi": 0.017,
+      "status": "stable"
+    },
+    "cust_prior_mean_abs_qty": {
+      "psi": 0.0133,
+      "status": "stable"
+    },
+    "cust_recency_days": {
+      "psi": 0.0582,
+      "status": "stable"
+    },
+    "cust_price_z": {
+      "psi": 0.0204,
+      "status": "stable"
+    },
+    "cust_amount_ratio": {
+      "psi": 0.0009,
+      "status": "stable"
+    },
+    "cust_qty_ratio": {
+      "psi": 0.0066,
+      "status": "stable"
+    },
+    "prod_prior_lines": {
+      "psi": 0.4091,
+      "status": "drift"
+    },
+    "prod_prior_return_rate": {
+      "psi": 0.1323,
+      "status": "watch"
+    },
+    "prod_prior_zero_price_share": {
+      "psi": 0.0156,
+      "status": "stable"
+    },
+    "prod_price_z": {
+      "psi": 0.007,
+      "status": "stable"
+    },
+    "prod_price_ratio": {
+      "psi": 0.0066,
+      "status": "stable"
+    },
+    "prod_qty_ratio": {
+      "psi": 0.0025,
+      "status": "stable"
+    }
+  }
+}

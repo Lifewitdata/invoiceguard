@@ -1,0 +1,11 @@
+{
+  "n_lines": 1067371,
+  "n_invoices": 53628,
+  "n_customers": 5942,
+  "return_line_share": 0.021501427338760374,
+  "customer_id_missing_share": 0.22766872999172733,
+  "nonpositive_price_share": 0.005815222635803296,
+  "top_customer_decile_return_share": 0.31254901960784315,
+  "date_min": "2009-12-01",
+  "date_max": "2011-12-09"
+}

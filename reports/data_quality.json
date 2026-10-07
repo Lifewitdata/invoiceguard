@@ -1,0 +1,50 @@
+{
+  "n_rows": 1067371,
+  "n_checks": 7,
+  "n_failed_errors": 0,
+  "n_warnings": 2,
+  "checks": [
+    {
+      "name": "required_columns",
+      "passed": true,
+      "detail": "all present",
+      "severity": "error"
+    },
+    {
+      "name": "min_rows",
+      "passed": true,
+      "detail": "1,067,371 rows vs required 100,000",
+      "severity": "error"
+    },
+    {
+      "name": "missing_frac:customer_id",
+      "passed": true,
+      "detail": "22.77% missing",
+      "severity": "warn"
+    },
+    {
+      "name": "exact_duplicate_lines",
+      "passed": false,
+      "detail": "34,337 exact duplicate lines (3.22%)",
+      "severity": "warn"
+    },
+    {
+      "name": "nonpositive_price",
+      "passed": false,
+      "detail": "6,207 lines with price <= 0 (0.58%)",
+      "severity": "warn"
+    },
+    {
+      "name": "negative_quantity_returns",
+      "passed": true,
+      "detail": "22,950 return/cancellation lines (2.15%)",
+      "severity": "warn"
+    },
+    {
+      "name": "date_range",
+      "passed": true,
+      "detail": "2009-12-01 to 2011-12-09",
+      "severity": "warn"
+    }
+  ]
+}

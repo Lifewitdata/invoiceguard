@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+.pytest_cache/
+
+# Data (regenerate via src/data.py)
+data/raw/*
+data/interim/*
+data/processed/*
+!data/raw/.gitkeep
+!data/interim/.gitkeep
+!data/processed/.gitkeep
+
+# Model artifacts (regenerate via src/train.py)
+models/*
+!models/.gitkeep
+
+# Reports, keep figures and reports tracked
+reports/registry.json
+
+# Env
+.env
+.env.*
